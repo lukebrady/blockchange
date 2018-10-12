@@ -2,18 +2,30 @@ pragma solidity ^0.4.18;
 
 contract CreateChange {
     string title;
-    string message;
-    /* Constructor */
-    function newChange(string t, string m) public {
+    string desciption;
+    bool approved = false;
+    
+    function newChange(string t, string d) public {
         title = t;
-        message = m;
+        desciption = d;
     }
-
+    
     function getTitle() public view returns(string) {
         return title;
     }
-
-    function getMessage() public view returns(string) {
-        return message;
+    
+    function getDescr() public view returns(string) {
+        return desciption;
+    }
+    
+    function getApprovalStatus() public view returns(bool) {
+        return approved;
+    }
+    
+    function approveChange() public returns(bool) {
+        if(approved != true) {
+            approved = true;
+        }
+        return approved;
     }
 }
