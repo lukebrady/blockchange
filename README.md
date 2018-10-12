@@ -1,2 +1,2 @@
 # blockchange
-A private blockchange for change management within an organization.
+A private blockchain for change management within an organization.
