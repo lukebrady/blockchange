@@ -1,9 +1,0 @@
-eth.coinbase
-eth.getBalance(eth.coinbase)
-miner.start()
-eth.getBalance(eth.coinbase)
-miner.stop()
-eth.getBalance(eth.coinbase)
-miner.hashrate
-eth.getBlock(0)
-miner.start()
